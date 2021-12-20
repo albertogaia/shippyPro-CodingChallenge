@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+header {
+    background-color: coral;
+    padding: 15px 5px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+header .nav-brand a {
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+section {
+    text-align: center;
+}
+
+.container {
+    max-width: 1180px;
+    margin: auto;
+}
+
+.d-flex {
+    display: flex;
+    margin: auto;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.pt-10 {
+    padding-top: 10px;
+}
+
+.col-4 {
+    width: calc(100% / 3);
+}
+
+#best-flight {
+    background-color: coral;
+    border-radius: 10px;
+    padding: 15px 0;
+    color: white;
+}
+
+.btn {
+    padding: 10px 25px;
+    background-color: coral;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
