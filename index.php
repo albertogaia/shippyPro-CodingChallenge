@@ -57,7 +57,7 @@ array_push($airportsArr, $turinAirport, $romeAirport);
 
 // Creo degli oggetti dei voli con dati random e li pusho in un array contenente i voli
 $flightsArr = [];
-$n_flights = 5;
+$n_flights = rand(2,10);
 for($i = 0; $i < $n_flights; $i++){
     // Creo l'oggetto dei voli
     $flight = new Flight(
@@ -144,7 +144,7 @@ $ecoFlight = array_filter($flightsArr , function($flight) use($lowPrice){
 
         <section id="all-flights" class="container mt-30">
             <div class='row'>
-                <h2>All Result: </h2>
+                <h2>All Results: (<?php echo count($flightsArr) ?>) </h2>
             </div>
             <div class='row d-flex space-between pt-10'>
                 <div class='col-4'><h4>Departure Code</h4></div>
